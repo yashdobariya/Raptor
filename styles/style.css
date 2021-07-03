@@ -171,7 +171,7 @@ body {
 }
 
 .services-card {
-  max-width: 350px;
+  width: 100%;
   margin: 10px;
 }
 
@@ -306,7 +306,8 @@ body {
 }
 
 .customer-pera {
-  width: 40%;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   font-size: 1.2rem;
   margin-top: 20px;
@@ -387,14 +388,21 @@ body {
   margin-top: 100px;
 }
 
-.services-btn button {
+.serv-btn {
+  text-decoration: none;
   padding: 20px 20px;
+  /* margin-top: 10px; */
   border-radius: 50px;
-  margin-left: 10px;
-  font-size: 1rem;
-  background-color: #31be5b;
+  font-size: 16px;
+  background-color: white;
   border: 1px solid var(--green);
+  color: #31be5b;
+}
+.active,
+.serv-btn:hover {
+  background-color: #31be5b;
   color: #fff;
+  transition: all 0.5s;
 }
 
 .services-image {
@@ -409,7 +417,9 @@ body {
 }
 
 .services-img-div img {
-  width: 700px;
+  width: 500px;
+  height: auto;
+  margin-top: 100px;
 }
 
 .services-contant-div {
@@ -478,7 +488,7 @@ body {
 
 .news-form-div span {
   position: absolute;
-  left: 68%;
+  left: 66%;
   bottom: 90px;
   font-size: 25px;
 }
@@ -539,7 +549,7 @@ body {
   background-color: rgb(50, 185, 179);
   text-align: center;
   height: auto;
-  padding: 100px;
+  padding: 50px;
   color: #fff;
 }
 
@@ -573,7 +583,7 @@ body {
 }
 
 .footer-card2 {
-  width: 25%;
+  width: 24%;
   text-align: left;
 }
 
@@ -593,7 +603,7 @@ body {
 }
 
 .footer-card3 {
-  width: 25%;
+  width: 22%;
   text-align: left;
 }
 
@@ -613,7 +623,7 @@ body {
 }
 
 .footer-card4 {
-  width: 22%;
+  width: 28%;
   text-align: left;
 }
 
@@ -637,7 +647,7 @@ body {
 }
 
 .footer-social-icon span {
-  margin: 20px;
+  margin: 10px;
 }
 
 .footer-div h6 {

@@ -1,6 +1,6 @@
 @media (min-width: 320px) and (max-width: 750px) {
   .header {
-    margin-left: 150px;
+    margin-left: 50px;
     padding: 10px;
     font-size: 1.5rem;
   }
@@ -9,13 +9,11 @@
     flex-direction: column;
     height: auto;
   }
-
   .dashbord-content {
     text-align: center;
     width: 100%;
     padding-left: 0px;
   }
-
   .img-div {
     width: 100%;
     height: 200px;
@@ -27,17 +25,15 @@
     padding-top: 250px;
   }
   .form-div {
-    width: 60%;
+    width: 85%;
   }
   .form-in {
     width: 100%;
     max-width: 800px;
   }
-
   .form-btn {
     width: 100%;
   }
-
   .service-cards-div {
     display: flex;
     flex-direction: column;
@@ -48,8 +44,24 @@
     flex-direction: column;
     width: 80%;
   }
+  .pricing-card {
+    margin: 20px 0px 0px 0px;
+  }
+  .pricing-card h3 {
+    margin-top: 10px;
+  }
+  .card-btn {
+    margin: 0;
+    width: 90%;
+  }
   .fact-cards {
     flex-direction: column;
+  }
+  .fact-card h3 {
+    font-size: 2rem;
+  }
+  .fact-card p {
+    font-size: 1rem;
   }
   .customer-cards {
     flex-direction: column;
@@ -59,12 +71,19 @@
   .customer-card {
     margin-top: 100px;
   }
+  .customer-card img {
+    right: 40px;
+  }
+  .customer-card-content strong {
+    margin-top: 20px;
+  }
   .services-btn {
     display: flex;
     flex-direction: column;
   }
   .services-btn button {
-    margin-top: 10px;
+    width: 90%;
+    margin: 10px auto;
   }
   .services-image {
     display: flex;
@@ -75,22 +94,24 @@
   }
   .services-img-div img {
     width: 90%;
+    margin-top: 20px;
   }
-
   .services-contant-div {
     width: 100%;
   }
-
   .news-con {
     width: 80%;
   }
-
   .news-form-div {
     width: 100%;
   }
   .news-form-div span {
-    font-size: 20px;
+    font-size: 25px;
+     right: 10px;
   }
+.news-form-div input{
+  width: 90%;
+}
   .blog-cards {
     display: flex;
     flex-direction: column;
@@ -124,6 +145,9 @@
 }
 
 @media (min-width: 750px) and (max-width: 900px) {
+  .header {
+    margin-left: 130px;
+  }
   .img-div img {
     margin-top: 135px;
   }
