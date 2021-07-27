@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: myfonts;
-  src: url(/fonts/Poppins-Regular.ttf);
+  src: url(../fonts/Poppins-Regular.ttf);
 }
 
 body {
@@ -48,7 +48,7 @@ body {
 .dashbord-content {
   width: 40%;
   max-width: 800px;
-  padding: 100px 0px 10px 100px;
+  padding: 127px 0px 10px 127px;
 }
 
 .dashbord-content h1 {
@@ -59,14 +59,16 @@ body {
   color: #f0f0f0;
   margin-top: 10px;
   font-size: 1rem;
+  font-weight: 100;
+  opacity: 0.6;
 }
 
 .btn {
-  padding: 15px;
+  padding: 15px 20px;
   margin: 50px 0px 100px 0px;
   border-radius: 50px;
   border: none;
-  font-size: 1rem;
+  font-size: 14px;
   color: rgb(34, 184, 184);
 }
 
@@ -92,18 +94,20 @@ body {
 .title {
   padding-top: 150px;
   color: rgb(34, 184, 184);
-  font-size: 1rem;
+  font-size: 12px;
 }
 
 .domain-section h2 {
   margin-top: 20px;
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 .domain-section h6 {
   margin-top: 20px;
   color: var(--ofblack);
-  font-size: 1rem;
+  font-size: 12px;
+  font-weight: 100;
 }
 
 .form-div {
@@ -119,7 +123,7 @@ body {
   max-width: 300px;
   padding: 20px;
   border: none;
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: 300;
   outline: none;
 }
@@ -140,7 +144,7 @@ body {
 .domain-section ul li {
   display: inline;
   margin: 10px;
-  font-size: 1.1rem;
+  font-size: 12px;
 }
 
 .domain-section a {
@@ -155,7 +159,8 @@ body {
 
 .service-div h1 {
   margin: 20px;
-  font-size: 1.5rem;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .service-cards-div {
@@ -163,6 +168,7 @@ body {
   flex-direction: row;
   justify-content: center;
   margin: 80px;
+  height: 350px;
 }
 
 .service-cards-div img {
@@ -174,13 +180,20 @@ body {
   width: 100%;
   margin: 10px;
 }
+.services-card p {
+  font-size: 15px;
+  font-weight: 100;
+  opacity: 0.6;
+}
 
 .services-card h2 {
   margin: 20px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .services-card span {
-  font-size: 80px;
+  font-size: 50px;
 }
 
 .pricing-plan-div {
@@ -191,7 +204,8 @@ body {
 
 .pricing-plan-div h1 {
   margin: 20px;
-  font-size: 1.5rem;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .pricing-cards-div {
@@ -220,16 +234,18 @@ body {
   margin: 0 auto;
   color: white;
   border-radius: 0px 0px 10px 10px;
+  font-size: 14px;
 }
 
 .pricing-card h2 {
   margin-top: 30px;
   font-size: 2rem;
+  font-weight: 500;
 }
 
 .sub-title {
-  padding: 10px;
-  font-size: 1.1rem;
+  padding: 10px 30px;
+  font-size: 15px;
   opacity: 0.3;
 }
 
@@ -239,12 +255,13 @@ body {
   background-color: rgb(178, 232, 236);
   border-radius: 50px;
   border: none;
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 500;
   color: rgb(34, 184, 184);
 }
 .pricing-card h3 {
-  font-size: 1rem;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .pricing-card ul {
