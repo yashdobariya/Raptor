@@ -20,10 +20,10 @@
     height: 200px;
   }
   .img-div img {
-    margin-top: -150px;
+    margin-top: -190px;
   }
   .title {
-    padding-top: 250px;
+    padding-top: 100px;
   }
   .form-div {
     width: 85%;
@@ -39,6 +39,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px 20px 100px 20px;
+  }
+  .services-img-con {
+    padding: 30px;
+    width: 100%;
   }
   .pricing-cards-div {
     display: flex;
@@ -99,6 +104,7 @@
   }
   .services-contant-div {
     width: 100%;
+    margin-top: 0px;
   }
   .news-con {
     width: 80%;
@@ -107,11 +113,10 @@
     width: 100%;
   }
   .news-form-div span {
-    font-size: 25px;
-    right: 10px;
+    right: 30px;
   }
   .news-form-div input {
-    width: 90%;
+    width: 70%;
   }
   .blog-cards {
     display: flex;
@@ -143,6 +148,10 @@
   .footer-div h6 {
     padding-bottom: 80px;
   }
+  .services-contant-div {
+    /* width: 50%; */
+    /* text-align: left; */
+  }
 }
 
 @media (min-width: 750px) and (max-width: 900px) {
@@ -150,7 +159,16 @@
     margin-left: 130px;
   }
   .img-div img {
-    margin-top: 135px;
+    margin-top: 230px;
+  }
+  .title {
+    padding-top: 140px;
+  }
+  .news-form-div span {
+    right: 30px;
+  }
+  .news-form-div input {
+    width: 70%;
   }
   .services-card h2 {
     margin: 0px;
@@ -166,7 +184,8 @@
     margin-top: 150px;
   }
   .services-img-con {
-    padding-top: 0px;
+    width: 100%;
+    padding: 20px;
   }
   .services-contant-div {
     width: 50%;
@@ -180,6 +199,9 @@
   }
   .footer-social-icon {
     display: flex;
+  }
+  .footer-div {
+    padding: 50px;
   }
 }
 

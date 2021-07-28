@@ -30,7 +30,7 @@ body {
   padding: 10px;
   font-size: 1rem;
   font-weight: 800;
-  color: var(--blue);
+  color: rgb(52, 201, 193);
   text-transform: uppercase;
 }
 
@@ -52,11 +52,12 @@ body {
 }
 
 .dashbord-content h1 {
-  color: #f0f0f0;
+  color: #fff;
+  font-weight: bold;
 }
 
 .dashbord-content p {
-  color: #f0f0f0;
+  color: #fff;
   margin-top: 10px;
   font-size: 1rem;
   font-weight: 100;
@@ -68,6 +69,7 @@ body {
   margin: 50px 0px 100px 0px;
   border-radius: 50px;
   border: none;
+  background-color: #fff;
   font-size: 14px;
   color: rgb(34, 184, 184);
 }
@@ -80,19 +82,21 @@ body {
 
 .img-div img {
   width: 100%;
-  height: 600px;
+  height: auto;
+  min-height: 640px;
   position: absolute;
   object-fit: contain;
 }
 
 .domain-section {
-  background-color: var(--offwhite);
+  background-color: #f8faff;
+  min-height: 500px;
   height: auto;
   text-align: center;
 }
 
 .title {
-  padding-top: 150px;
+  padding-top: 100px;
   color: rgb(34, 184, 184);
   font-size: 12px;
 }
@@ -114,7 +118,7 @@ body {
   max-width: 550px;
   margin: 0 auto;
   margin-top: 50px;
-  border: 1px solid var(--green);
+  border: 1px solid #80d683;
   padding: 20px;
 }
 
@@ -123,7 +127,7 @@ body {
   max-width: 300px;
   padding: 20px;
   border: none;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
   outline: none;
 }
@@ -167,8 +171,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 80px;
-  height: 350px;
+  margin: 80px 80px 0px 80px;
+  min-height: 450px;
+  height: auto;
 }
 
 .service-cards-div img {
@@ -189,7 +194,7 @@ body {
 .services-card h2 {
   margin: 20px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .services-card span {
@@ -197,9 +202,10 @@ body {
 }
 
 .pricing-plan-div {
-  background-color: rgb(223, 235, 220);
+  background-color: #f8faff;
   text-align: center;
   height: auto;
+  min-height: 820px;
 }
 
 .pricing-plan-div h1 {
@@ -280,22 +286,30 @@ body {
 
 .fact-div {
   background-image: linear-gradient(rgba(33, 219, 194, 0.5), rgb(34, 184, 184)),
-    url("./image/fun_fact_bg.webp");
+    url("../image/fun_fact_bg.webp");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: auto;
-  text-align: center;
+  background-position: center center;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  min-height: 600px;
+  text-align: center;
 }
 
 .fact-div h1 {
-  padding-top: 100px;
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .fact-div p {
   margin-top: 20px;
-  font-size: 0.8rem;
-  opacity: 0.8;
+  font-size: 12px;
+  font-weight: 100;
+  opacity: 0.6;
 }
 
 .fact-cards {
@@ -303,15 +317,18 @@ body {
   flex-direction: row;
   justify-content: center;
   margin-top: 70px;
-  padding-bottom: 80px;
 }
 
 .fact-card {
   margin: 40px;
 }
+.fact-card h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
 
 .customer-div {
-  background-color: var(--offwhite);
+  background-color: #f8faff;
   text-align: center;
   height: auto;
 }
@@ -362,8 +379,15 @@ body {
   text-align: left;
 }
 
+.customer-card-content p {
+  font-size: 16px;
+  font-weight: 100;
+  opacity: 0.6;
+}
+
 .customer-card-content strong {
   margin-top: 50px;
+  font-weight: 600;
 }
 
 .customer-card-content h6 {
@@ -385,8 +409,8 @@ body {
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 10px;
+  width: 10px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -398,17 +422,18 @@ body {
 }
 
 .services-div h1 {
-  margin-top: 30px;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .services-btn {
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .serv-btn {
   text-decoration: none;
-  padding: 20px 20px;
-  /* margin-top: 10px; */
+  padding: 10px 15px;
   border-radius: 50px;
   font-size: 16px;
   background-color: white;
@@ -425,7 +450,6 @@ body {
 .services-image {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
   padding-bottom: 80px;
 }
 
@@ -441,42 +465,48 @@ body {
 
 .services-contant-div {
   width: 50%;
+  text-align: left;
+  margin-top: 100px;
 }
 
 .services-img-con {
+  width: 70%;
   display: flex;
   flex-direction: column;
-  padding: 50px;
+  padding: 20px;
 }
 
 .services-img-con p {
-  text-align: left;
   margin-top: 20px;
+  font-size: 14px;
   opacity: 0.6;
 }
 
 .newsletter-div {
-  background-color: rgb(52, 201, 193);
+  background-image: linear-gradient(to right, #2ebdc4 10%, #68e5b2 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   height: auto;
+  min-height: 500px;
   color: #fff;
+  padding: 20px;
 }
 
 .newsletter-div h1 {
-  padding-top: 200px;
-  font-size: 2.5rem;
+  font-size: 30px;
   font-weight: 400;
 }
 
 .news-con {
-  width: 50%;
+  width: 45%;
   margin: 0 auto;
-  margin-top: 20px;
 }
 
 .news-con h6 {
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 14px;
+  font-weight: 100;
   opacity: 0.7;
 }
 
@@ -484,49 +514,53 @@ body {
   position: relative;
   margin: 0 auto;
   margin-top: 50px;
-  width: 60%;
+  width: 45%;
   max-width: 700px;
-  padding-bottom: 80px;
 }
 
 .news-form-div input {
-  padding: 20px;
+  padding: 15px;
   width: 50%;
   border-radius: 50px;
   font-size: 1rem;
-  background-color: rgb(52, 201, 193);
+  background-color: transparent;
   border: 1px solid white;
   outline: none;
 }
 
 .news-form-div input::placeholder {
   color: white;
+  font-size: 14px;
+  font-weight: 100;
 }
 
 .news-form-div span {
   position: absolute;
   left: 66%;
-  bottom: 90px;
-  font-size: 25px;
+  bottom: 10px;
+  font-size: 20px;
 }
 
 .blog-div {
-  background-color: var(--offwhite);
+  background-color: #f8faff;
   text-align: center;
   height: auto;
 }
 .blog-div h1 {
   margin-top: 30px;
+  font-weight: 500;
+  font-size: 25px;
 }
 .blog-con {
   margin: 0 auto;
   margin-top: 20px;
-  width: 50%;
+  width: 39%;
 }
 
 .blog-con h6 {
-  font-size: 1rem;
-  opacity: 0.4;
+  font-size: 12px;
+  font-weight: 100;
+  opacity: 0.5;
 }
 
 .blog-cards {
@@ -540,6 +574,7 @@ body {
 .blog-card {
   background-color: #fff;
   margin: 20px;
+  box-shadow: 0px 0px 10px #cccfd6;
 }
 
 .blog-card img {
@@ -550,6 +585,7 @@ body {
 .blog-card p {
   text-align: left;
   padding: 15px;
+  font-size: 14px;
 }
 
 .blog-card span {
@@ -566,7 +602,7 @@ body {
   background-color: rgb(50, 185, 179);
   text-align: center;
   height: auto;
-  padding: 50px;
+  padding: 150px;
   color: #fff;
 }
 
@@ -583,7 +619,7 @@ body {
 }
 
 .footer-card1 h1 {
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -591,7 +627,7 @@ body {
   margin-top: 30px;
   opacity: 0.6;
   width: 80%;
-  font-size: 1rem;
+  font-size: 14px;
 }
 
 .footer-card1 button {
@@ -605,7 +641,7 @@ body {
 }
 
 .footer-card2 h1 {
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -617,6 +653,7 @@ body {
 
 .footer-card2 ul li {
   line-height: 40px;
+  font-size: 14px;
 }
 
 .footer-card3 {
@@ -625,7 +662,7 @@ body {
 }
 
 .footer-card3 h1 {
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: 400;
 }
 
@@ -637,6 +674,7 @@ body {
 
 .footer-card3 ul li {
   line-height: 40px;
+  font-size: 14px;
 }
 
 .footer-card4 {
@@ -652,10 +690,12 @@ body {
 .footer-con i {
   margin-top: 5px;
   margin-right: 20px;
+  font-size: 14px;
 }
 
 .footer-con p {
   opacity: 0.6;
+  font-size: 14px;
 }
 
 .footer-social-icon {
@@ -665,10 +705,11 @@ body {
 
 .footer-social-icon span {
   margin: 10px;
+  font-size: 20px;
 }
 
 .footer-div h6 {
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: 100;
   margin-top: 80px;
   opacity: 0.6;
